@@ -1,0 +1,34 @@
+ALGORITHM lecture_phrase
+VAR
+ phrase:char;
+ nb_mot,nb_voy,nb_incre: int;
+BEGIN
+  nb_voy   = 0;
+  nb_mot   = 0;
+  nb_incre = 1;
+  while(nb_incre) == 0;
+ {
+   write("veillez entrer une phrase qui se termine par un point");
+   read(phrase);
+	 while(phrase[nb_increb] !='.')
+     {
+	   if ( phrase[nb_incre] == 'a' || phrase[nb_incre] == 'e' || phrase[nb_incre] == 'i' || phrase[nb_incre] == 'o' || phrase[nb_incre] == 'u' || phrase[nb_incre] == 'y' )
+	   { 
+	     nb_voy++;
+		 nb_incre++;
+		}
+		else if ( phrase[nb_incre] == ' ' )
+            {
+                nb_mot++;
+                nb_incre++;
+            }
+		else
+            {
+                nb_incre++;
+            }
+	}
+	write("Dans votre phrase nous avons ",nb_mot,"mot et ",nb_voy,"voyelle")
+	
+ }
+
+END
